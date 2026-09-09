@@ -15,4 +15,8 @@ class Config:
     FREE_TIER_MEMBERSHIP_LIMIT: int = 2
     PRO_TIER_MEMBERSHIP_LIMIT = 0  # unlimited
 
+    PROJECT_NAME = os.getenv("PROJECT_NAME", "Task Management API")
+    PROJECT_VERSION = os.getenv("PROJECT_VERSION", "1.0.0")
+    PROJECT_DESCRIPTION = os.getenv("PROJECT_DESCRIPTION", "B2B Task Board App")
+
 settings = Config()
