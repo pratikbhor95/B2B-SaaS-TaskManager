@@ -36,3 +36,17 @@ wheels/
 .env
 *.env
 
+# Root-level ignores
+.DS_Store
+.vscode/
+
+# Ignore dependencies and builds inside backend and frontend explicitly from the root view
+backend/venv/
+backend/dist/
+backend/__pycache__/
+backend/.env
+backend/*.db
+backend/*.sqlite
+
+frontend/node_modules/
+frontend/dist/
